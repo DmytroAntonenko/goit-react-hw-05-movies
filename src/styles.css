@@ -33,16 +33,24 @@ html {
   }
   
   .Header {
-    height: 40px;
-    padding: 5px 20px;
+    height: 60px;
+    padding: 18px 20px;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+     background-image: repeating-linear-gradient(
+        -45deg,
+        #c6e965,
+        #7bd4eb 15px,
+        #fcfcfc 15px,
+        #fcfcfc 30px
+      );
   }
   
   .Navigation {
-    line-height: 30px;
+    line-height: 1.18;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
+
   }
   
   .Home {
@@ -51,4 +59,5 @@ html {
   
   .ActiveLinkNav {
     color: #c70039;
+    margin-right: 20px;
   }

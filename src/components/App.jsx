@@ -1,15 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 
-import Layout from './Layout';
+import AppBar from  './AppBar/AppBar';
+import Home from 'pages/Home/Home';
 
 export const App = () => {
   return (
     <div>
+      <AppBar />
       <Routes>
-        <Route path="/" element={<Layout />}>
-        </Route>
+        <Route index element={<Home />} />
+        
       </Routes>
-      React homework template
+      {/* React homework template */}
     </div>
   );
 };

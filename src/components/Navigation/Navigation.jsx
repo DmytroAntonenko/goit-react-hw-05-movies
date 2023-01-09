@@ -2,16 +2,15 @@ import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
 
 const Navigation = () => (
+  
   <nav className="Navigation">
     <NavLink
-      exact
       to={routes.home}
-      className="Home"
-      activeClassName="ActiveLinkNav"
+      className={({ isActive }) => (isActive ? 'ActiveLinkNav' : 'Home')}
     >
       Home
     </NavLink>
-    <NavLink to={routes.movies} activeClassName="ActiveLinkNav">
+    <NavLink to={routes.movies} className={({ isActive }) => (isActive ? 'ActiveLinkNav' : 'Home')}>
       Movies
     </NavLink>
   </nav>
