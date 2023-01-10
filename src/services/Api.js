@@ -7,6 +7,7 @@ export const fetchTrendingMovies = async () => {
     const response = await Axios.get(
       `${BASE_URL}trending/all/week?api_key=${KEY}`,
     );
+    // console.log(response.data.results)
     return response.data.results;
 };
 

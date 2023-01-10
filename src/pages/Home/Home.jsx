@@ -1,4 +1,6 @@
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useEffect, useState } from 'react';
 
 import { fetchTrendingMovies } from 'services/Api';
@@ -18,7 +20,8 @@ const Home = () => {
           }))
         );
       } catch {
-        toast.error('Річого не знайдено, спробуйте ще раз!');
+        toast.error('Нічого не знайдено, спробуйте ще раз!');
+        return;
       }
     }
     getTrandingMovies();
@@ -26,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>Trending today</h1>
+      <h1 className="Title">Trending today</h1>
       <MoviesList movies={movies} />
     </>
   );

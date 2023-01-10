@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { BiCameraMovie } from 'react-icons/bi';
 import { NavLink, useLocation } from 'react-router-dom';
 
 
@@ -9,13 +9,14 @@ const MoviesList = ({ movies }) => {
   return (
     <ul>
     {movies.map(({ id, title }) => (
-      <li key={id}>
+      <li className="MovieItem" key={id}>
+        <BiCameraMovie  className="MovieIcon" size={32} />
         <NavLink to={{ pathname: `/movies/${id}`, state: { from: location } }}>
           {title}
         </NavLink>
       </li>
     ))}
-  </ul>
+  </ul> 
   );
 };
 
