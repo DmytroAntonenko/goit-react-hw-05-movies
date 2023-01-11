@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import placeholderAvatar from 'images/no-foto.png';
 
+import placeholderAvatar from 'images/no-foto.png';
 import { fetchMovieCast } from 'services/Api';
 
 
@@ -27,6 +27,7 @@ const Cast = () => {
         );
         
       } catch {
+        console.log('error');
         toast.error("Нічого не знайдено!");
       }
     }
