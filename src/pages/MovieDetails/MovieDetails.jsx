@@ -1,10 +1,10 @@
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 import BackButton from 'components/BackButton';
-import MovieCard from 'components/MovieCard';
+// import MovieCard from 'components/MovieCard';
 import { BiCameraMovie } from 'react-icons/bi';
 // import routes from 'routes';
-import { useEffect, useState, useParams } from 'react';
+// import { useEffect, useState, useParams } from 'react';
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
 // import {
 //   Outlet,
@@ -14,7 +14,7 @@ import { Outlet, NavLink, useLocation } from 'react-router-dom';
 //   useLocation,
 // } from 'react-router-dom';
 
-import { fetchMovieDetails } from 'services/Api';
+// import { fetchMovieDetails } from 'services/Api';
 
 
 // const BASE_IMG_URL_1 = 'https://image.tmdb.org/t/p/w500';

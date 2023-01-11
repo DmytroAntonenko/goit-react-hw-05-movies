@@ -12,12 +12,12 @@ const Reviews = () => {
     async function getReviews() {
       try {
         const getReviews = await fetchMovieReviews(movieId);
-
+        
         setMovieReviews(
           getReviews.map(({ author, content, id }) => ({
-            author: author,
-            content: content,
-            id: id,
+            author,
+            content,
+            id,
           }))
         );
       } catch {
