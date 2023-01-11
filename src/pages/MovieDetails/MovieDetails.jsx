@@ -63,7 +63,7 @@ const MovieDetails= () => {
         <BackButton />
         {/* <MovieCard /> */}
         
-       <Outlet />
+       
        <div className="ContainerCastReviews">
         <p className="AddText">Additional information</p>
           <ul>
@@ -81,6 +81,7 @@ const MovieDetails= () => {
             </li>
           </ul>
       </div>
+      <Outlet />
     </>
   );
 };

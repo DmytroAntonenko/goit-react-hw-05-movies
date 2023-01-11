@@ -31,6 +31,10 @@ html {
     text-decoration: none;
     color: #212121;
   }
+
+  li {
+    list-style-type: none;
+  }
   
   .Header {
     height: 60px;
@@ -200,6 +204,7 @@ html {
   .AddText {
     font-weight: 500;
     font-size: 18px;
+    text-align: center;
   }
 
   .ContainerCastReviews {
@@ -207,4 +212,12 @@ html {
     
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .Content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
   }
