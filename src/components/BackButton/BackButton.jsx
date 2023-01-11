@@ -6,7 +6,7 @@ const BackButton = () => {
   const location = useLocation();
 
   return (
-    <NavLink className="BackButton"to={location?.state?.from ?? routes.home} type="button">
+    <NavLink className="BackButton" to={location?.state?.from ?? routes.home} type="button">
       Back
     </NavLink>
   );

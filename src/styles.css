@@ -221,3 +221,16 @@ html {
     border-bottom: 1px solid black;
     padding-bottom: 8px;
   }
+
+  .OooopsItem {
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .MovieCast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }

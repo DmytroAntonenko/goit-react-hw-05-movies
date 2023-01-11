@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import placeholderAvatar from 'images/no-foto.png';
 import { fetchMovieCast } from 'services/Api';
 
+const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w300';
 
 const Cast = () => {
   const { movieId } = useParams();
@@ -38,10 +39,16 @@ const Cast = () => {
   return (
     <div  className="ContainerCastReviews">
     {movieCast && movieCast.length ? (
-      <ul>
+      <ul className="MovieCast">
         {movieCast.map(({ name, character, image, id }) => (
           <li key={id}>
-            <img src={placeholderAvatar + image} alt={'Foto ' + name} />
+            <img 
+            src={
+              image
+                ? BASE_IMG_URL + image
+                : placeholderAvatar
+            }
+            alt={'Foto ' + name} />
             <h3>{name}</h3>
             <p>Character: {character}</p>
           </li>
