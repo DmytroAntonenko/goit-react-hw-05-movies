@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import placeholderAvatar from 'images/no-foto.png';
+import placeholderPoster from 'images/no-poster.png';
 
 const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w300';
 
@@ -13,8 +13,7 @@ const MovieCard = ({ movie }) => {
     overview,
     genres,
   } = movie;
-  console.log(genres)
-
+ 
   return (
     <div  className="ContainerMovieCard">
       <div>
@@ -22,7 +21,7 @@ const MovieCard = ({ movie }) => {
           src={
             poster_path
             ? BASE_IMG_URL + poster_path
-            : placeholderAvatar
+            : placeholderPoster
           }
           alt={title ? title : name}
         />
@@ -33,7 +32,7 @@ const MovieCard = ({ movie }) => {
         <h3>Overwiew</h3>
         <p>{overview}</p>
         <h3>Genres</h3>
-        <p>{genres.map(genre => genre.name).join(', ')}</p>
+        <p>{genres?.map(genre => genre.name).join(', ')}</p>
       </div>
     </div>
   );
