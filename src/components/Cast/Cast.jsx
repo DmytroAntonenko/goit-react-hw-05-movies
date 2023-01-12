@@ -15,7 +15,6 @@ const Cast = () => {
     async function getCast() {
       try {
         const getCast = await fetchMovieCast(movieId);
-        console.log(getCast);
 
         setMovieCast(
           getCast.map(({ name, character, profile_path, id }) => ({
@@ -24,9 +23,7 @@ const Cast = () => {
             character,
             id,   
           }))
-
-        );
-        
+        );       
       } catch {
         console.log('error');
         toast.error("Нічого не знайдено!");
@@ -55,7 +52,7 @@ const Cast = () => {
         ))}
       </ul>
     ) : (
-        <p>We don't have the information about any actors.</p>
+        <p className="AddText">We don't have the information about any actors.</p>
     )}
   </div>
   );

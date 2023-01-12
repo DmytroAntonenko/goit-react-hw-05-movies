@@ -234,3 +234,9 @@ html {
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  .ContainerMovieCard {
+    display: flex;
+    gap: 20px;
+    margin: 24px 60px;
+  }

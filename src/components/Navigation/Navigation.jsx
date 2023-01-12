@@ -6,8 +6,7 @@ const Navigation = () => (
   <nav className="Navigation">
     <NavLink
       to={routes.home}
-      className={({ isActive }) => (isActive ? 'ActiveLinkNav' : 'Home')}
-    >
+      className={({ isActive }) => (isActive ? 'ActiveLinkNav' : 'Home')}>
       Home
     </NavLink>
     <NavLink to={routes.movies} className={({ isActive }) => (isActive ? 'ActiveLinkNav' : 'Home')}>
